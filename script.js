@@ -22,6 +22,7 @@ const h1 = document.querySelectorAll('h1')
 const search = document.querySelector('.search')
 const strip = document.querySelectorAll('.strip')
 const btn = document.querySelector(".btn")
+const notFound = document.querySelector('.notfound')
 
 btn.addEventListener('click', ()=>{
     let res =  search.value.trim().replace(/\W/g, '');
@@ -31,6 +32,7 @@ btn.addEventListener('click', ()=>{
         if(ele.classList.contains(`${res}`)){
             ele.style.height = '100%'
         } else{
+            notFound.style.display = 'block' 
             ele.style.height = '0'
         }
     })
