@@ -32,7 +32,6 @@ btn.addEventListener('click', ()=>{
         if(ele.classList.contains(`${res}`)){
             ele.style.height = '100%'
         } else{
-            notFound.style.display = 'block' 
             ele.style.height = '0'
         }
     })
